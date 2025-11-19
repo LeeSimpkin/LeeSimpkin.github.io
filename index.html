@@ -1,16 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Pages Site</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    h1 { color: #2c3e50; }
-    p { color: #34495e; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lee Simpkin — Software Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This site is hosted with GitHub Pages 🎉</p>
+  <div class="site-wrap">
+    <header class="header">
+      <a class="brand" href="/">
+        <div class="logo">LS</div>
+        <div>
+          <h1>Lee Simpkin</h1>
+          <p class="small">Software developer — portfolio</p>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn" style="padding:0.35rem 0.6rem;font-size:0.9rem">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="hero card">
+          <h2>Hi — I'm Lee. I build reliable, maintainable software.</h2>
+          <p>Focused on full‑stack and systems engineering. I enjoy clean code, fast feedback loops, and shipping projects that solve real problems.</p>
+          <div style="margin-top:0.9rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
+            <a href="#projects" class="btn">View projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <section id="projects" style="margin-top:1rem;">
+          <h3 style="margin:0 0 0.6rem 0">Selected projects</h3>
+          <div class="projects">
+            <article class="project">
+              <h3>Project One</h3>
+              <p>A short summary of the project — what it does and the stack used. Replace with your real project description.</p>
+              <div class="meta">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <a href="#" class="btn" style="margin-left:auto">View</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Project Two</h3>
+              <p>Example: an API service, CLI tool, or automation script. Brief note about impact or link to repo.</p>
+              <div class="meta">
+                <span class="tag">Go</span>
+                <span class="tag">Docker</span>
+                <a href="#" class="btn" style="margin-left:auto">View</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Project Three</h3>
+              <p>Short teaser — use this area for your favorite or most recent work.</p>
+              <div class="meta">
+                <span class="tag">Python</span>
+                <span class="tag">ML</span>
+                <a href="#" class="btn" style="margin-left:auto">View</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>More coming</h3>
+              <p>Keep this card as a placeholder while you add projects — it keeps the layout tidy.</p>
+              <div class="meta">
+                <span class="tag">TBD</span>
+                <a href="#" class="btn" style="margin-left:auto">Repo</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <aside class="sidebar">
+        <div class="card">
+          <div class="profile-brief">
+            <div class="avatar">LS</div>
+            <div>
+              <strong>Lee Simpkin</strong>
+              <div class="small" style="margin-top:0.25rem">Developer, Open Source enthusiast</div>
+            </div>
+          </div>
+
+          <div style="margin-top:0.9rem">
+            <div class="small" style="margin-bottom:0.45rem"><strong>Skills</strong></div>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Go</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+
+          <div style="margin-top:0.9rem">
+            <div class="small" style="margin-bottom:0.45rem"><strong>Contact</strong></div>
+            <div class="small">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:0.9rem">
+          <div class="small" style="margin-bottom:0.5rem"><strong>Snippet</strong></div>
+          <pre><code>// Example: quickly show what you work on
+console.log('Hello, world!');
+</code></pre>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="small">Built with care • © <span id="year"></span> Lee Simpkin</div>
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

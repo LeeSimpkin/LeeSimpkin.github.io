@@ -45,6 +45,8 @@
                 <!-- Desktop Nav Links -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#portfolio" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Portfolio</a>
+                    <a href="#experience" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Experience</a>
+                    <a href="#education" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Education</a>
                     <a href="#skills" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Skills</a>
                     <a href="#contact" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Contact</a>
                 </div>
@@ -57,7 +59,7 @@
         <!-- 1. Hero Section -->
         <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-lg mb-16">
             <div class="max-w-4xl mx-auto">
-                <p class="text-lg text-gray-500 mb-3 font-medium">Game Developer & Creative Engineer</p>
+                <p class="text-lg text-gray-500 mb-3 font-medium">Game Developer</p>
                 <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900">
                     Building Worlds, <span class="accent-text">One Line of Code</span> at a Time.
                 </h1>
@@ -132,7 +134,62 @@
             </div>
         </section>
 
-        <!-- 3. Skills & Technologies Section -->
+        <!-- 3. Work Experience Section -->
+        <section id="experience" class="py-12">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Work Experience</h2>
+
+            <div class="space-y-12 max-w-4xl mx-auto">
+                <!-- Experience Item 1 -->
+                <div class="bg-white p-6 rounded-xl card-shadow border-l-4 border-fuchsia-500 hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+                        <div>
+                            <h3 class="text-2xl font-semibold accent-text">Computer Science Demonstrator</h3>
+                            <p class="text-lg text-gray-700 font-medium">University of Hull</p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Jan 2025 – Present</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 ml-4">
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-white p-6 rounded-xl card-shadow border-l-4 border-fuchsia-500 hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+                        <div>
+                            <h3 class="text-2xl font-semibold accent-text">Teaching Internship Computing</h3>
+                            <p class="text-lg text-gray-700 font-medium">St Mary's College, Hull</p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">Jun 2018 – Dec 2020</p>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 ml-4">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Education Section -->
+        <section id="education" class="py-12">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Education</h2>
+
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <!-- Education Item 1 -->
+                <div class="bg-white p-6 rounded-xl card-shadow hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-3">
+                        <div>
+                            <h3 class="text-2xl font-semibold accent-text">M.Eng Computer Science for Games Programming</h3>
+                            <p class="text-lg text-gray-700 font-medium">University of Hull</p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 md:mt-0 md:text-right">2017 – 2018</p>
+                    </div>
+                    <p class="text-gray-600">Focus on real-time rendering, advanced algorithms, and physics simulation. Thesis: "Optimizing Mesh Generation for Procedural Worlds."</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Skills & Technologies Section (Original 3) -->
         <section id="skills" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Core Expertise</h2>
             
@@ -184,17 +241,16 @@
             </div>
         </section>
 
-        <!-- 4. Contact Section -->
+        <!-- 6. Contact Section (Original 4) -->
         <section id="contact" class="py-12">
             <div class="bg-fuchsia-50 p-10 rounded-xl shadow-inner border-2 border-fuchsia-200">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-4 accent-text">Let's Build Something Awesome.</h2>
+                    <h2 class="text-4xl font-bold mb-4 accent-text">Get In Touch</h2>
                     <p class="text-lg text-gray-600 mb-8">
-                        
                     </p>
-                    <a href="mailto:your.email@example.com" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-semibold rounded-full text-white accent-bg hover:opacity-90 transition duration-300 shadow-xl">
+                    <a href="mailto:lsimpkin710@gmail.com" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-semibold rounded-full text-white accent-bg hover:opacity-90 transition duration-300 shadow-xl">
                         <i data-lucide="mail" class="w-6 h-6 mr-3"></i>
-                        Get In Touch
+                        Email
                     </a>
                 </div>
             </div>
@@ -204,7 +260,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Aurora Dev Portfolio. All rights reserved.</p>
+            <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Lee Dev Portfolio. All rights reserved.</p>
             <div class="mt-3 space-x-4">
                 <a href="#" class="text-gray-400 hover:text-fuchsia-400 transition"><i data-lucide="github" class="w-5 h-5 inline"></i></a>
                 <a href="#" class="text-gray-400 hover:text-fuchsia-400 transition"><i data-lucide="linkedin" class="w-5 h-5 inline"></i></a>

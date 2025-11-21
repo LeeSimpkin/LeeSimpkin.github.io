@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lee Simpkin Dev Portfolio</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
@@ -34,15 +32,12 @@
 </head>
 <body class="min-h-screen antialiased">
 
-    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo/Name -->
                 <a href="#home" class="text-2xl font-extrabold accent-text tracking-tight">
                     Lee Simpkin
                 </a>
-                <!-- Desktop Nav Links -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#portfolio" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Portfolio</a>
                     <a href="#experience" class="text-gray-600 hover:accent-text transition duration-200 font-medium">Experience</a>
@@ -56,7 +51,6 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        <!-- 1. Hero Section -->
         <section id="home" class="text-center py-16 md:py-24 bg-white rounded-xl shadow-lg mb-16">
             <div class="max-w-4xl mx-auto">
                 <p class="text-lg text-gray-500 mb-3 font-medium">Game Developer</p>
@@ -73,15 +67,12 @@
             </div>
         </section>
 
-        <!-- 2. Featured projects -->
         <section id="portfolio" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Featured Projects</h2>
             
             <div id="projects-grid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 
-                <!-- Project Card 1: RPG Title -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                    <!-- Placeholder Image -->
                     <img src="https://img.itch.zone/aW1nLzI0MTIwMzAwLnBuZw==/315x250%23c/LN1Wqc.png" 
                          alt="Screenshot of an Epic RPG game environment" 
                          class="w-full h-48 object-cover border-b-4 border-fuchsia-600"
@@ -90,16 +81,14 @@
                         <h3 class="text-2xl font-semibold mb-2 accent-text">Beluga Bus</h3>
                         <p class="text-sm font-medium text-gray-500 mb-4">Unity & C# | Role: Lead Gameplay Programmer</p>
                         <p class="text-gray-600 text-sm mb-4">Beluga Bus is a game where you're a beluga whale driving fish around different bus stops. Don't make them wait too long, or they'll get impatient and storm off! And don't bother staying on the road--you're underwater, after all!</p>
-                        <a href="#" class="inline-flex items-center text-fuchsia-600 hover:text-fuchsia-800 font-medium">
-                            beluga Bus Game
-                            <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        <a href="#beluga-demo" class="inline-flex items-center text-fuchsia-600 hover:text-fuchsia-800 font-medium">
+                            Play Demo Below
+                            <i data-lucide="arrow-down" class="w-4 h-4 ml-1"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Project Card 2: Puzzle Game -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                    <!-- Placeholder Image -->
                     <img src="https://placehold.co/600x400/fbcfe8/a21caf?text=Logic+Puzzle+Game" 
                          alt="Screenshot of a neon-themed puzzle game" 
                          class="w-full h-48 object-cover border-b-4 border-fuchsia-600"
@@ -115,9 +104,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3: Mobile Arcade -->
                 <div class="bg-white rounded-xl overflow-hidden card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                    <!-- Placeholder Image -->
                     <img src="https://placehold.co/600x400/e9d5ff/86198f?text=Mobile+Arcade+Game" 
                          alt="Screenshot of a fast-paced mobile arcade game" 
                          class="w-full h-48 object-cover border-b-4 border-fuchsia-600"
@@ -135,13 +122,20 @@
             </div>
         </section>
 
+        <section id="beluga-demo" class="py-12 mt-12">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Beluga Bus Playable Demo</h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-fuchsia-200 flex justify-center overflow-x-auto">
+                <iframe frameborder="0" src="https://itch.io/embed-upload/15585275?color=0068ed" allowfullscreen="" width="960" height="560">
+                    <a href="https://loreislying.itch.io/belugabus">Play Beluga Bus on itch.io</a>
+                </iframe>
+            </div>
+        </section>
 
-        <!-- 3. Education Section -->
+
         <section id="education" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Education</h2>
 
             <div class="space-y-8 max-w-4xl mx-auto">
-                <!-- Education Item 1 -->
                 <div class="bg-white p-6 rounded-xl card-shadow hover:shadow-lg transition duration-300">
                     <div class="flex flex-col md:flex-row justify-between items-start mb-3">
                         <div>
@@ -155,12 +149,10 @@
 
             </div>
         </section>
-        <!-- 4. Work Experience Section -->
         <section id="experience" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Work Experience</h2>
 
             <div class="space-y-12 max-w-4xl mx-auto">
-                <!-- Experience Item 1 -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-l-4 border-fuchsia-500 hover:shadow-lg transition duration-300">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
                         <div>
@@ -174,7 +166,6 @@
                     </ul>
                 </div>
 
-                <!-- Experience Item 2 -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-l-4 border-fuchsia-500 hover:shadow-lg transition duration-300">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
                         <div>
@@ -187,7 +178,6 @@
                         <li></li>
                     </ul>
                 </div>
-                <!-- work experience item 3 -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-l-4 border-fuchsia-500 hover:shadow-lg transition duration-300">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
                         <div>
@@ -203,12 +193,10 @@
             </div>
         </section>
 
-        <!-- 5. Skills & Technologies Section (Original 3) -->
         <section id="skills" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Core Expertise</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Skill Card: Engines -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-t-4 border-fuchsia-400">
                     <i data-lucide="controller" class="w-8 h-8 accent-text mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-gray-800">Game Engines</h3>
@@ -219,7 +207,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Card: Programming -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-t-4 border-fuchsia-400">
                     <i data-lucide="code" class="w-8 h-8 accent-text mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-gray-800">Programming Languages</h3>
@@ -230,7 +217,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Card: Systems -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-t-4 border-fuchsia-400">
                     <i data-lucide="cpu" class="w-8 h-8 accent-text mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-gray-800">Core Systems</h3>
@@ -242,7 +228,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Card: Tools -->
                 <div class="bg-white p-6 rounded-xl card-shadow border-t-4 border-fuchsia-400">
                     <i data-lucide="tool" class="w-8 h-8 accent-text mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-gray-800">Tools & Workflow</h3>
@@ -255,7 +240,6 @@
             </div>
         </section>
 
-        <!-- 6. Contact Section (Original 4) -->
         <section id="contact" class="py-12">
             <div class="bg-fuchsia-50 p-10 rounded-xl shadow-inner border-2 border-fuchsia-200">
                 <div class="text-center max-w-3xl mx-auto">
@@ -271,7 +255,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Lee Simpkin Portfolio. All rights reserved.</p>

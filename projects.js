@@ -45,14 +45,23 @@ const PROJECTS = [
     links: []
   },
   {
-    title: "Book barcode scanner",
-    kind: "Personal project",
-    status: "In progress",
+    title: "Game Engine and Game Project",
+    kind: "University Project",
     summary:
-      "Scan a book's barcode with a phone camera and have its details added to an Excel spreadsheet automatically.",
+      "A 3D game running on a bespoke game engine written with OpenGL.",
     details:
-      "A Flask backend and a JavaScript barcode library handle the scanning, and the results populate a spreadsheet that catalogues my book collection.",
-    tags: ["Flask", "JavaScript", "Excel"],
+      "A game involving AI Agents, a client-server to store highscores, projectile bullets, and more. Written on a bespoke phyics engine.",
+    tags: ["OpenGL", "Client-Server", "C#", "3D Engine"],
     links: []
+  },
+   {
+    title: "Beluga Bus",
+    kind: "GameJam",
+    summary:
+      "A 2D game written for 3 thing game.",
+    details:
+      "You are a beluga whale that needs to pick up and drop off fish from their bus stop. Be quick, you are graded and the levels get harder!",
+    tags: ["Unity", "Game Jam", "C#", "Lead Gameplay Programmer"],
+    links: [{label: "Play on Itch", href: "https://loreislying.itch.io/belugabus"}]
   }
 ];
